@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		801391B71C7F24A8008A9D64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391B61C7F24A8008A9D64 /* main.m */; };
 		801391BA1C7F24A8008A9D64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391B91C7F24A8008A9D64 /* AppDelegate.m */; };
-		801391BD1C7F24A8008A9D64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391BC1C7F24A8008A9D64 /* ViewController.m */; };
 		801391C01C7F24A8008A9D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801391BE1C7F24A8008A9D64 /* Main.storyboard */; };
 		801391C31C7F24A8008A9D64 /* ObjectiveC_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 801391C11C7F24A8008A9D64 /* ObjectiveC_CoreData.xcdatamodeld */; };
 		801391C51C7F24A8008A9D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801391C41C7F24A8008A9D64 /* Assets.xcassets */; };
 		801391C81C7F24A8008A9D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801391C61C7F24A8008A9D64 /* LaunchScreen.storyboard */; };
 		801391D31C7F24A8008A9D64 /* ObjectiveC_CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391D21C7F24A8008A9D64 /* ObjectiveC_CoreDataTests.m */; };
 		801391DE1C7F24A8008A9D64 /* ObjectiveC_CoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391DD1C7F24A8008A9D64 /* ObjectiveC_CoreDataUITests.m */; };
+		801391ED1C7F263B008A9D64 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391EC1C7F263B008A9D64 /* TableViewController.m */; };
+		801391F01C7F265F008A9D64 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391EF1C7F265F008A9D64 /* TableViewCell.m */; };
+		801391F21C7F2746008A9D64 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801391F11C7F2746008A9D64 /* CoreData.framework */; };
+		801391F51C7F2B82008A9D64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801391F41C7F2B82008A9D64 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +43,6 @@
 		801391B61C7F24A8008A9D64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		801391B81C7F24A8008A9D64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		801391B91C7F24A8008A9D64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		801391BB1C7F24A8008A9D64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		801391BC1C7F24A8008A9D64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		801391BF1C7F24A8008A9D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		801391C21C7F24A8008A9D64 /* ObjectiveC_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ObjectiveC_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		801391C41C7F24A8008A9D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,13 @@
 		801391D91C7F24A8008A9D64 /* ObjectiveC_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveC_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		801391DD1C7F24A8008A9D64 /* ObjectiveC_CoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC_CoreDataUITests.m; sourceTree = "<group>"; };
 		801391DF1C7F24A8008A9D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801391EB1C7F263B008A9D64 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		801391EC1C7F263B008A9D64 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		801391EE1C7F265F008A9D64 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = ../TableViewCell.h; sourceTree = "<group>"; };
+		801391EF1C7F265F008A9D64 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = ../TableViewCell.m; sourceTree = "<group>"; };
+		801391F11C7F2746008A9D64 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		801391F31C7F2B82008A9D64 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		801391F41C7F2B82008A9D64 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801391F21C7F2746008A9D64 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,7 @@
 		801391A91C7F24A8008A9D64 = {
 			isa = PBXGroup;
 			children = (
+				801391F11C7F2746008A9D64 /* CoreData.framework */,
 				801391B41C7F24A8008A9D64 /* ObjectiveC_CoreData */,
 				801391D11C7F24A8008A9D64 /* ObjectiveC_CoreDataTests */,
 				801391DC1C7F24A8008A9D64 /* ObjectiveC_CoreDataUITests */,
@@ -105,9 +115,13 @@
 			children = (
 				801391B81C7F24A8008A9D64 /* AppDelegate.h */,
 				801391B91C7F24A8008A9D64 /* AppDelegate.m */,
-				801391BB1C7F24A8008A9D64 /* ViewController.h */,
-				801391BC1C7F24A8008A9D64 /* ViewController.m */,
+				801391EE1C7F265F008A9D64 /* TableViewCell.h */,
+				801391EF1C7F265F008A9D64 /* TableViewCell.m */,
+				801391EB1C7F263B008A9D64 /* TableViewController.h */,
+				801391EC1C7F263B008A9D64 /* TableViewController.m */,
 				801391BE1C7F24A8008A9D64 /* Main.storyboard */,
+				801391F31C7F2B82008A9D64 /* ViewController.h */,
+				801391F41C7F2B82008A9D64 /* ViewController.m */,
 				801391C41C7F24A8008A9D64 /* Assets.xcassets */,
 				801391C61C7F24A8008A9D64 /* LaunchScreen.storyboard */,
 				801391C91C7F24A8008A9D64 /* Info.plist */,
@@ -274,10 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801391F51C7F2B82008A9D64 /* ViewController.m in Sources */,
 				801391C31C7F24A8008A9D64 /* ObjectiveC_CoreData.xcdatamodeld in Sources */,
-				801391BD1C7F24A8008A9D64 /* ViewController.m in Sources */,
 				801391BA1C7F24A8008A9D64 /* AppDelegate.m in Sources */,
 				801391B71C7F24A8008A9D64 /* main.m in Sources */,
+				801391F01C7F265F008A9D64 /* TableViewCell.m in Sources */,
+				801391ED1C7F263B008A9D64 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+}
 
+@property (weak, nonatomic) IBOutlet UILabel *carMake;
+@property (weak, nonatomic) IBOutlet UILabel *carModel;
+@property (weak, nonatomic) IBOutlet UILabel *carYear;
+
+- (IBAction)saveButton:(id)sender;
+- (IBAction)dismissKeyBoard:(id)sender;
 
 @end
-
