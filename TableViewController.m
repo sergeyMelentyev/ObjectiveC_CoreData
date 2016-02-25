@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import <CoreData/CoreData.h>
+#import "ViewController.h"
 
 @interface TableViewController ()
 
@@ -63,15 +64,13 @@
     return cell;
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString: @"UpdateCar"]) {
+        NSManagedObjectModel *SelectedDevice = [self.devices objectAtIndex: [[self.tableView indexPathForSelectedRow] row]];
+        ViewController *addView = segue.destinationViewController;
+        addView.device = SelectedDevice;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

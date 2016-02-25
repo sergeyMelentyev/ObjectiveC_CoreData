@@ -38,6 +38,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="D7a-D4-rap" kind="show" identifier="UpdateCar" id="Yh9-Lk-SWf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,7 +51,7 @@
                     <navigationItem key="navigationItem" id="PKH-tW-US5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="x7p-gf-UbU">
                             <connections>
-                                <segue destination="D7a-D4-rap" kind="show" id="H79-iU-mVA"/>
+                                <segue destination="D7a-D4-rap" kind="show" identifier="" id="H79-iU-mVA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -184,4 +187,7 @@
             <point key="canvasLocation" x="499" y="412"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yh9-Lk-SWf"/>
+    </inferredMetricsTieBreakers>
 </document>
