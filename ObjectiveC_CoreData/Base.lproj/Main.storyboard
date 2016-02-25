@@ -81,9 +81,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y3I-in-odj">
                                 <rect key="frame" x="20" y="101" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <action selector="dismissKeyBoard:" destination="D7a-D4-rap" eventType="editingDidEndOnExit" id="1uC-hu-pIh"/>
+                                    <action selector="dismissKeyBoard:" destination="D7a-D4-rap" eventType="editingDidEndOnExit" id="m1x-ac-E8W"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ru2-l1-jeC">
@@ -98,9 +98,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyJ-Ni-XoO">
                                 <rect key="frame" x="20" y="168" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <action selector="dismissKeyBoard:" destination="D7a-D4-rap" eventType="editingDidEnd" id="RSX-An-gce"/>
+                                    <action selector="dismissKeyBoard:" destination="D7a-D4-rap" eventType="editingDidEndOnExit" id="QAP-3q-uLL"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWC-H6-epA">
@@ -115,9 +115,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTU-T4-lSa">
                                 <rect key="frame" x="20" y="235" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <action selector="dismissKeyBoard:" destination="D7a-D4-rap" eventType="editingDidEnd" id="khT-nD-uef"/>
+                                    <action selector="dismissKeyBoard:" destination="D7a-D4-rap" eventType="editingDidEndOnExit" id="cuZ-Lo-QMa"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ5-JR-g0d">
@@ -156,9 +156,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="carMake" destination="48s-Ng-BI4" id="EDN-JQ-ikb"/>
-                        <outlet property="carModel" destination="Ru2-l1-jeC" id="WMY-zV-gBW"/>
-                        <outlet property="carYear" destination="oWC-H6-epA" id="GGf-GA-8DK"/>
+                        <outlet property="carMake" destination="y3I-in-odj" id="9EU-Nl-Psl"/>
+                        <outlet property="carModel" destination="JyJ-Ni-XoO" id="0Yq-c3-7Y1"/>
+                        <outlet property="carYear" destination="kTU-T4-lSa" id="ygX-Py-Q0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U5-ej-1Kq" userLabel="First Responder" sceneMemberID="firstResponder"/>

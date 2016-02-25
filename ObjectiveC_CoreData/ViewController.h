@@ -12,9 +12,11 @@
     
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *carMake;
-@property (weak, nonatomic) IBOutlet UILabel *carModel;
-@property (weak, nonatomic) IBOutlet UILabel *carYear;
+@property (weak, nonatomic) IBOutlet UITextField *carMake;
+@property (weak, nonatomic) IBOutlet UITextField *carModel;
+@property (weak, nonatomic) IBOutlet UITextField *carYear;
+
+@property (strong) NSManagedObjectModel *device;
 
 - (IBAction)saveButton:(id)sender;
 - (IBAction)dismissKeyBoard:(id)sender;

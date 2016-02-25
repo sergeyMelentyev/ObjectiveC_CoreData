@@ -20,8 +20,9 @@
 -(NSManagedObjectContext *) managedObjectContext {
     NSManagedObjectContext *context = nil;
     id delegate = [[UIApplication sharedApplication] delegate];
-    if ([delegate performSelector: @selector(managedObjectContext)])
-        context= [delegate managedObjectContext];
+    if ([delegate performSelector: @selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
     return context;
 }
 
@@ -39,12 +40,8 @@
 - (void)viewDidAppear:(BOOL)animated {
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName: @"Device"];
-    self.devices = [[managedObjectContext executeFetchRequest: fetchRequest error:nil] mutableCopy];
+    self.devices = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
     [self.tableView reloadData];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -55,15 +52,16 @@
     return self.devices.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
     
-    // Configure the cell...
+    NSManagedObjectModel *device = [self.devices objectAtIndex: indexPath.row];
+    [cell.textLabel setText: [NSString stringWithFormat: @"%@ %@", [device valueForKey:@"text1"], [device valueForKey: @"text2"]]];
+    [cell.detailTextLabel setText: [device valueForKey: @"text3"]];
     
     return cell;
 }
-*/
 
 /*
  #pragma mark - Navigation
