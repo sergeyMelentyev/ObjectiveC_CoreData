@@ -52,7 +52,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
     
     NSManagedObjectModel *device = [self.devices objectAtIndex: indexPath.row];
-    [cell.textLabel setText: [NSString stringWithFormat: @"%@ %@", [device valueForKey:@"text1"], [device valueForKey: @"text2"]]];
+    [cell.textLabel setText: [NSString stringWithFormat: @"%@", [device valueForKey:@"text1"]]];
     [cell.detailTextLabel setText: [device valueForKey: @"text3"]];
     
     return cell;
