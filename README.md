@@ -1,4 +1,4 @@
-Приложение, демонстрирующее работу CoreData
+Приложение, демонстрирующее базовый уровень работы с CoreData
 
 [Objective]-C, CoreData.framework
 
